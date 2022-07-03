@@ -1,0 +1,24 @@
+@keyframes links {
+    0%   {color: #FFFFFF;}
+    50%  {color: #474554;}
+    75% {color: #ACA7CB;}
+    100%   {color: #FFFFFF;}
+}
+
+body {
+    background: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+a:link {
+    text-decoration: none;
+    animation-name: links;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
