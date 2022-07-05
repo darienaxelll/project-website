@@ -11,9 +11,8 @@ body {
 
 nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
+    justify-content: space-around;
+    border-bottom: 1px solid grey;
 }
 
 a:link {
@@ -21,4 +20,17 @@ a:link {
     animation-name: links;
     animation-iteration-count: infinite;
     animation-duration: 6s;
+}
+
+#box1{
+    flex: 1;
+}
+
+#box2{
+    flex: 3;
+    margin: 1em 10em;
+}
+
+#box3{
+    flex: 3;
 }
