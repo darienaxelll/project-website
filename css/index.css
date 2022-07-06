@@ -1,36 +1,48 @@
-@keyframes links {
-    0%   {color: #FFFFFF;}
-    50%  {color: #474554;}
-    75% {color: #ACA7CB;}
-    100%   {color: #FFFFFF;}
+* {
+    box-sizing: border-box;
 }
 
 body {
     background: black;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid grey;
+.topnav {
+    overflow: hidden;
 }
 
-a:link {
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    animation-name: links;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
+    font-size: 17px;
 }
 
-#box1{
-    flex: 1;
+.topnav #menuBars {
+    display: none;
 }
 
-#box2{
-    flex: 3;
-    margin: 1em 10em;
+a {
+    color: lightblue;
 }
 
-#box3{
-    flex: 3;
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a#menuBars {
+        float: right;
+        display: block;
+    }
+}
+
+img {
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+}
+
+div {
+    border: 1px solid red;
+    color: lightblue;
 }
